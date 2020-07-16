@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Welcome I am Dhiraj Shrestha</title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<style>
+		.*{
+			text-align: justify;
+
+		}
+		header{
+			text-align: center;
+			padding:2px;
+			background-color: #932F5F;
+			color: #1DADA6  ;
+			font-family: rockwell;
+			font-size: 30px;
+			width: 100%;
+		}
+		body{
+			background-color: lavenderblush ;
+		}
+		h1{
+			text-align: center;
+		}
+		img{
+			border: 2px solid red;
+ 			border-radius: 25px;
+		}
+		#myName{
+			font-family: Rockwell;
+
+		}
+		.img-container{
+			text-align: center;
+			margin:10px;
+		}
+		button{
+			margin-bottom: 1em;
+
+		}
+		.fas,.fab,.fa-map-marker-alt,#mySite{
+			margin-right: 0.5em;
+			color:#053D46  ;
+		}
+		#mySite:hover{
+			text-decoration: underline;
+			color:red;
+		}
+		i, a{
+			margin-bottom: 1em;
+		}
+		th{
+			padding:3px;
+			font-family: rockwell;
+			font-size: 20px;
+			color: #053D46;
+/*			margin-right: 20px;*/
+		}
+		table{
+
+		  border-collapse: collapse;
+		  width: 100%;
+		  margin:3px;
+		}
+		td {
+		  padding: 8px;
+		  text-align: left;
+		  border-bottom: 2px solid #ddd;
+		}
+		footer{
+			height:10px;
+			background-color: #932F5F;
+		}
+	</style>
+
+</head>
+<body>
+	<header>Github Projects</header>
+	<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavender; height:100%;">
+    	<div class="img-container">
+    		<img id="myImage" width="150" height="150">
+    	</div>
+	<h1 id="myName"></h1>
+	<p id="myBio"></p>
+	<a href="mailto:test@test.com"><i class="fas fa-envelope">dherajshrestha316@gmail.com</i></a>
+	<i class="fas fa-home" id="myLocation"></i><br/>
+	<a href="https://dhirajstha.com.np" ><i class='fab fa-chrome' id="mySite"> </i></a><br/>
+	<button><i class='fab fa-github'></i ><a href="https://github.com/Dhiraj-Shrestha">Dhiraj-Shrestha</a></button>
+	<button><i class='fab fa-linkedin'></i ><a href="https://www.linkedin.com/in/dhiraj-shrestha-246190191/">Dhiraj Shrestha</a></button>
+	<button><i class='fab fa-facebook'></i ><a href="https://www.facebook.com/meccolov">Crestha Dhiraj</a></button>
+	<button><i class='fab fa-instagram'></i ><a href="https://instagram.com/cresthadhiraj?utm_source=ig_profile_share&igshid=zy3i9zhk9y3o">Dhiraj-Shrestha</a></button>
+    	
+    </div>
+    <div class="col-sm-8" style="background-color:lavenderblush;">
+    	<table>
+		<thead style="border-style:solid;">
+			<tr>
+				<th>Project Name</th>
+				<th>URL</th>
+			</tr>
+		</thead>
+
+		<tbody id="tableBody">
+			<tr>
+				<td style="border-style: 2px solid red;"></td>
+			</tr>
+		</tbody>
+	</table>
+	<form action="mailto:info@w3docs.com" onsubmit="formvalid()"  method="post"enctype="text/plain">
+      <div>
+        <label for="name">Name:
+          <input type="text"   id="NAME" name="Name"  placeholder="Your Name">
+        </label>
+      </div>
+      <div>
+        <label for="email">Email:
+                <input type="email" id="EMAIL" name="E-MAIL" placeholder="Email">
+        </label>
+      </div>
+      <div>
+        <label>Comments:</label>
+        <br />
+        <textarea id ="MESSAGE"  name="Message"  cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+      </div>
+      <div>
+        <input type="submit" name="submit" value="Send" />
+        <input type="reset" name="reset" value="Clear Form" />
+      </div>
+    </form>
+    	
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+<script type="text/javascript">
+	  function formvalid(){
+      var FULLNAME=document.getElementById("NAME").value;  //Assigning variable value get from the field for name using unique ID
+      var EMAIL=document.getElementById("EMAIL").value; //Assigning variable value get from the field for email using unique ID
+      var REVIEW=document.getElementById("MESSAGE").value; //Assigning variable value get from the field for message using unique ID-->
+
+      if(FULLNAME!=""  && EMAIL!="" && MESSAGE!=""){ //if field are not empty -->
+        alert("Thank you for your time");
+      }
+    } 
+
+</script>
+<footer></footer>
+
+<script src="main.js"></script>
+</html>
+
